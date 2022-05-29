@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Smart Advertising</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/smartad.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="../index.php">Home</a>
+    <a href="smartad.html" style="font-weight: bold;">Smart Ads</a>
+    <a href="analytics.html">Customer Analytics</a>
+    <a href="helptheblind.html">Help The Blind</a>
+  </div>
+
+  <div class="row">
+    <div class="column sys">
+      <h3 style="text-align: center;">Age-Gender Recognition System</h3>
+      <video id="video"  autoplay muted></video>
+      <p>Predicted Age: </p>
+      <p id="age" style="display: inline;"></p>
+      <p>Predicted Gender: </p>
+      <p id="gender" style="display: inline;"></p>
+      <p style="color: #A0A1A2; text-align: justify;text-justify: inter-word;">Based on the predicted age and gender, the adds are displayed on the screen.</p>
+    </div>
+
+    <div class="column add">
+      <h3 style="color: rgb(255, 255, 255);">Digital Advertising Board</h3>
+      <p id="load" style="color: #ffff; text-align: center;">Press Start to start displaying ads</p>
+      <button class="button" id="start">Start Ads</button>
+      <br><br>
+      <img src="" id="display">
+    </div>
+  </div>
+
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/face-api.js"></script>
+  <script src="../js/face-api.min.js"></script>
+  <script src="../js/smartad.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Customer Analytics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/analytics.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="../index.php">Home</a>
+    <a href="smartad.html">Smart Ads</a>
+    <a href="analytics.html" style="font-weight: bold;">Customer Analytics</a>
+    <a href="helptheblind.html">Help The Blind</a>
+  </div>
+
+  <div class="row">
+    <div class="column sys">
+      <h3 style="text-align: center;">Face Recognition System</h3>
+      <video id="video" autoplay muted></video>
+      <p style="color: #A0A1A2;text-align: justify; text-justify: inter-word;">The application detects the age, gender, facial expressions of the customers and uses
+        this data
+        to display the analytics.</p>
+    </div>
+
+    <div class="column add" id="printableArea">
+      <h3 style="text-align: center;">Realtime Customer Analytics</h3>
+      <p id="load" style="font-weight: bold;">Press Start to start analytics</p>
+      <button class="button" id="start">Start Analytics</button>
+      <div class="group">
+        <h4>Relative time spent in the store by Male and Female customers</h4>
+        <p class="des">Male</p>
+        <p id="male" class="line" style="background-color: #299617"></p>
+        <p class="des">Female</p>
+        <p id="female" class="line" style="background-color: #FFF700"></p>
+      </div>
+
+      <div class="group">
+        <h4>Relative time spent in the store by different Age Groups</h4>
+        <p class="des">Less than 10yrs</p>
+        <p id="a0" class="line" style="background-color: #FF3855;"></p>
+        <p class="des">10yrs to 20yrs</p>
+        <p id="a1" class="line" style="background-color: #FFAA1D;"></p>
+        <p class="des">20yrs to 30yrs</p>
+        <p id="a2" class="line" style="background-color: #5946B2;"></p>
+        <p class="des">30yrs to 40yrs</p>
+        <p id="a3" class="line" style="background-color: #FF007C;"></p>
+        <p class="des">40yrs to 50yrs</p>
+        <p id="a4" class="line" style="background-color: #A7F432;"></p>
+        <p class="des">50yrs to 60yrs</p>
+        <p id="a5" class="line" style="background-color: #5DADEC;"></p>
+        <p class="des">Above 60yrs</p>
+        <p id="a6" class="line" style="background-color: #A83731;"></p>
+      </div>
+
+      <div class="group">
+        <h4>Predicted emotions of different customers</h4>
+        <p class="des">Happy</p>
+        <p id="happy" class="line" style="background-color: #FF3855;"></p>
+        <p class="des">Neutral</p>
+        <p id="neutral" class="line" style="background-color: #FFAA1D;"></p>
+      </div>
+      <br><br>
+      <input type="button" onclick="printDiv('printableArea')" value="Print Analytics" class="button" style="float: left;"/>
+    </div>
+  </div>
+  <script>
+    function printDiv(divName) {
+      var printContents = document.getElementById(divName).innerHTML;
+      var originalContents = document.body.innerHTML;
+
+      document.body.innerHTML = printContents;
+
+      window.print();
+
+      document.body.innerHTML = originalContents;
+    }
+  </script>
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/face-api.js"></script>
+  <script src="../js/face-api.min.js"></script>
+  <script src="../js/analytics.js"></script>
+</body>
+
+</html>

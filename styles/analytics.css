@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+ /* Style the topnav links */
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active{
+  background-color: white
+}
+
+  .column {
+    float: left;
+    padding: 10px;
+    height: 1000px;
+
+
+  }
+
+  .column.add {
+    width: 75%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #EBF2F8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .column.sys {
+    width: 25%;
+    background-color: #323536;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align: justify;text-justify: inter-word; */
+  }
+  .column.sys h2{
+      text-align: center;
+  }
+  #display{
+      width: 100%;
+      height: 450px;
+      background-color: rgba(212, 226, 240, 0.336);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #video{
+      width: 100%;
+      height: 300px;
+      background-color: rgba(223, 206, 206, 0.19);
+  }
+
+.button{
+  background-color: #00A651;
+  color: #ffff;
+  padding: 10px 30px 10px 30px;
+  border-radius: 27px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.button:hover{
+  background-color: #008B44;
+
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .line{
+      font-size: small;
+      height: 25px;
+      width: 11%;
+      margin: 0;
+  }
+  .des{
+      margin: 1px;
+      font-size: 13px;
+      color: black;
+  }
+  .group{
+    border-radius: 5px;
+    background-color: white;
+    padding: 1% 1.5% 1% 1.5%;
+    margin-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column.add, .column.sys {
+      width: 100%;
+    }
+  }
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background-color:  rgba(8, 1, 110, 0.6); 
+  }
