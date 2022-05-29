@@ -14,7 +14,7 @@
 
     <div class="topnav">
         <a href="index.html" style="font-weight: bold;">Home</a>
-        <a href="features/smartad.html">Smart Ads</a>
+        <a href="features/smart.html">Smart Ads</a>
         <a href="features/analytics.html">Customer Analytics</a>
         <a href="features/helptheblind.html">Help The Blind</a>
     </div>
