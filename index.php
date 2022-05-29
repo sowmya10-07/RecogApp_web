@@ -21,9 +21,8 @@
 
     <div class="header">
         <h1>RecogApp</h1>
-        <p>A browser based application which uses face recognition for smarter advertising, to display customer
-            analytics
-            in a store and to read out expressions of a person to the blind.</p>
+        <p>A browser-based application which uses face recognition to display ads in a smarter way, 
+            gain customer analytics and to help the blind to understand the emotions of the person near them.</p>
     </div>
 
     <div class="row">
