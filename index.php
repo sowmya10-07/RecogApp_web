@@ -34,7 +34,7 @@
                 Based on the predicted age and gender, ads are displayed on screen.<br><br> This will lead to better
                 reach of the ad to the concerned person.<br><br>Click start to start displaying the ads.</p>
             </p>
-            <a href="features/smartad.html" class="button">Start</a>
+            <a href="features/smart.html" class="button">Start</a>
         </div>
 
         <div class="column">
