@@ -50,7 +50,7 @@
             <img src="images/blindwoman.png" alt="blind" style="width: 25%; height: 140px;">
             <p>The application helps the blind to understand the emotions of the person near them.<br><br>The
                 application predicts the expressions of the person facing the camera. These expressions
-                are read alound so that the blind person can better understand the situations.<br><br>Click start to
+                are read aloud so that the blind person can better understand the situations.<br><br>Click start to
                 proceed.</p>
             </p>
             <a href="features/helptheblind.html" class="button">Start</a>
