@@ -29,7 +29,7 @@
         <div class="column">
             <h2>Smarter Advertising</h2>
             <img src="images/adboard.png" alt="digitalboard" class="images">
-            <p>The application predectics the age and gender of the person facing the advertising board.
+            <p>The application predicts the age and gender of the person facing the advertising board.
                 Based on the predicted age and gender, ads are displayed on screen.<br><br> This will lead to better
                 reach of the ad to the concerned person.<br><br>Click start to start displaying the ads.</p>
             </p>
